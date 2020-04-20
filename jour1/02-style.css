@@ -83,3 +83,34 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid blue;
+}
+
+.element ul{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.element li{
+    list-style: none;
+    margin: 0;
+}
