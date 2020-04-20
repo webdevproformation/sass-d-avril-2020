@@ -1,0 +1,85 @@
+/*02-style.css*/
+
+/* faire un peu de mis en forme*/
+
+/*section est la balise parent des div
+section contient les div 
+permet de savoir la largeur et la hauteur de section
+section>div*10>{$}
+
+*/
+section {
+    border:5px solid red;
+}
+/* div est une balise en bloc 
+hauteur de son contenu 
+largeur de son parent 
+comportement par défaut d'une balise en bloc
+*/
+section > div {
+    border:1px solid blue;
+}
+
+/*à partir de maintenant utiliser les flex box pour changer l'organisation visuelle 
+display flex => section 
+impact sur les enfants directes => div
+uniquement eux
+*/
+section{
+    display: flex;
+    justify-content : space-around;
+}
+/* mettre l'ensemble des éléments enfants direct de section => div 
+
+les uns à côté des autres 
+chaque enfant va avoir largeur et la hauteur de son contenu 
+
+justify-content => dire comment l'espace restant doit être répartie
+flex-start
+flex-end
+space-between => prendre l'espace répartir de manière égale entre les div
+en + responsive
+space-around
+
+:nth-child() => permet de sélectionner un élément parmis plusieurs 
+
+*/
+
+section > div:nth-child(3){
+    height: 30px;
+    background-color: aqua;
+}
+
+section > div:nth-child(5){
+    height: 70px;
+    background-color: brown;
+}
+
+section{
+   align-items: center;
+}
+/*
+align-items permet de définir la hauteur des div
+par défaut 
+stretch => etiré 
+flex-start la hauteur du contenu
+flex-end
+center
+
+dans la page 02-flex.html, ajouter à la suite 
+
+section > div > *:nth-child(1)
+1 article contient 2 zones 
+    zone de titre => header
+        h2 contient 3 mots
+        time le texte 20/04/2020
+    p contient 20 mots
+
+*/
+
+header{
+    border:2px solid pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
