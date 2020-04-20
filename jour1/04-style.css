@@ -1,0 +1,35 @@
+/*
+faire en sorte que entre l' img et le menu ul on metent tout l'espace disponible
+*/
+.zone1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.zone1 ul{
+    display: flex;
+    align-items: center;
+}
+
+.zone1 ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+.zone1 ul li.last{
+    border:1px solid blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 2s background;
+}
+
+.zone1 ul li.last:hover{
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+}
+/* https://flexboxfroggy.com/ */
+
+/*https://www.youtube.com/watch?v=JJSoEo8JSnc*/
+
