@@ -233,6 +233,113 @@
             /*si vous ajoutez une bordure elle va être inclue dans la width et ajouter en + */
         }
     </style>
+
+    <!-- 
+
+
+    -->
+    <!-- section.zone5>article*10>(header>(h2>lorem3)+time>{le 20/04/2020})+p>lorem10 -->
+    <section class="zone5">
+        <article>
+            <header>
+                <h2>Lorem, ipsum dolor.</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Sapiente, nulla magnam!</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Nemo dolorem excepturi repellendus eum non, unde sunt odio voluptatibus.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Nostrum, tempore cupiditate.</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Nostrum est reprehenderit delectus officia id laboriosam ab tempore magnam.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Facilis, assumenda laborum?</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Quas molestiae sapiente inventore! Rerum natus consequuntur tempore esse fugit?</p>
+        </article>
+        <article>
+            <header>
+                <h2>Voluptas, labore beatae.</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Fuga quos excepturi labore sed enim harum quod illo eum.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Quis, ad laborum.</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Quae iusto atque veniam perspiciatis dolorem quasi amet, maiores corporis.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Incidunt, ullam error.</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Facere accusantium laboriosam provident voluptatibus facilis eos nam magnam id!</p>
+        </article>
+        <article>
+            <header>
+                <h2>Repellat, assumenda aliquid?</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Repudiandae eaque provident, libero quaerat pariatur sapiente reiciendis saepe eligendi.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Eum, dolor deserunt.</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Temporibus architecto perferendis excepturi accusamus qui magni enim sequi! Obcaecati.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Iure, ducimus sapiente?</h2>
+                <time>le 20/04/2020</time>
+            </header>
+            <p>Nam, in totam qui maxime eaque nostrum odio nesciunt delectus.</p>
+        </article>
+    </section>
+    <!-- section.zone5>article*10>(header>(h2>lorem3)+time>{le 20/04/2020})+p>lorem10 -->
+    <style>
+        .zone5 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .zone5>article {
+            width: 30%;
+            border: 1px solid chocolate;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        .zone5>article>header {
+            display: flex;
+            align-items: center;
+        }
+
+        .zone5>article>header h2 {
+            font-size: 16px;
+        }
+
+        .zone5>article>header time {
+            font-size: 10px;
+        }
+    </style>
 </body>
 
 </html>
