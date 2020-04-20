@@ -1,0 +1,159 @@
+<!--
+    03-flex-suite.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        display flex => permet de gérer l'espace restant dans une ligne
+        display:flex;
+        => tous les éléments enfants vont s'aligner
+        => gérer l'espace restant (à la suite des éléments)
+        justify-content :
+        flex-start
+        flex-end
+        space-between
+        space-around 
+
+        => si j'ai un élément enfant qui a une hauteur supérieure à la hauteur des autres enfants
+        align-items :
+        flex-start : caler vers le bord top du parent + prendra la hauteur du contenu
+        flex-end : caler vers le bord bottom du parent + prendra la hauteur du contenu
+        center : aligné par rapport à la ligne centrale en hauteur du parent + enfants prendont la hauteur de leur contenu
+        stretch : prendre la hauteur du parent 
+
+        ----------------------
+
+        flex-wrap :
+    -->
+
+
+    <!-- section.zone1>p*4>lorem9 expliquer 
+        align-items Ctrl + Maj + D => il existe d'entre pour faire la même 
+        sélectionner la ligne Ctrl + Maj + / -->
+    <!-- section.zone1>p*4>lorem9 -->
+    <section class="zone1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores.</p>
+        <p>Tempora consectetur, libero delectus placeat minus nihil tempore? Sit!</p>
+        <p>Maxime eligendi mollitia, facere dolor error labore numquam! Praesentium.</p>
+        <p>Nesciunt, cupiditate. Perspiciatis quo tempora incidunt cupiditate nemo voluptas?</p>
+    </section>
+    <style>
+        .zone1 {
+            /* parent */
+            display: flex;
+            align-items: center;
+        }
+
+        .zone1>p {
+            background: red;
+        }
+    </style>
+    <!-- 
+        deuxième zone
+            image 
+            texte
+    -->
+    <!-- section.zone2>img+p>lorem3 -->
+    <section class="zone2">
+        <img src="https://via.placeholder.com/100x50" alt="">
+        <p>Lorem, ipsum dolor.</p>
+    </section>
+
+    <style>
+        /* body h1 , h2 ... h6 , p, ul, li, figure */
+        p {
+            /* par défaut les p ont une marge de 16px*/
+            margin: 0;
+        }
+
+        .zone2 {
+            border: 1px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+
+    <!-- 
+        section qui a la class zone3
+         p * 15 contenant 30 mots fictifs
+    -->
+    <!-- section.zone3>p*15>lorem30 -->
+    <section class="zone3">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur officiis maiores libero velit hic non
+            quas voluptatibus deserunt quo qui. Ipsum ex eligendi nesciunt porro, dolores sequi vel ad natus?</p>
+        <p>Consequuntur pariatur qui ipsum voluptates esse temporibus unde minima laudantium consectetur sed? Natus est
+            deleniti labore, autem dicta dolores ipsam rerum. Et aliquid voluptatum voluptatibus corporis quidem commodi
+            saepe fugit?</p>
+        <p>Nobis deleniti odio odit officiis, vitae delectus doloribus labore sed mollitia magnam aut, velit praesentium
+            fugit. Et dolores, blanditiis odio nihil expedita officia culpa odit enim facilis aperiam illo quisquam!</p>
+        <p>Id nisi corrupti vel. Necessitatibus rem reprehenderit, voluptatum doloribus quisquam deleniti cupiditate,
+            est autem ex eos rerum in sequi eveniet odit. Provident labore asperiores obcaecati, eaque totam eum fugiat
+            sunt?</p>
+        <p>Alias delectus labore culpa ipsa veniam eos. Placeat, voluptatem! Voluptates nostrum quae, rem tempora magni,
+            voluptate, iste enim dignissimos illum vero quod fugiat consectetur omnis natus illo quis nemo itaque.</p>
+        <p>Eaque at sit laboriosam ab itaque inventore cum iusto magnam adipisci culpa! Impedit, dolor nostrum adipisci
+            nesciunt neque accusantium itaque deleniti laboriosam totam, iste ea ut. Quos exercitationem sit
+            dignissimos.</p>
+        <p>Illo consequuntur dolores id possimus? Dicta dolorem aperiam fugiat nobis similique ipsa aut, ad quisquam
+            maiores aliquid! Ullam accusantium tempora adipisci commodi quia reprehenderit, delectus maxime, in, ducimus
+            amet error.</p>
+        <p>Libero sint perferendis non! Temporibus voluptatibus necessitatibus iusto? Cum sint sit necessitatibus
+            repudiandae maiores saepe. In accusamus fuga dolores doloremque odit perferendis, placeat nisi magni
+            voluptatum ratione omnis doloribus dolor?</p>
+        <p>Tenetur earum exercitationem necessitatibus quis! Ipsum dicta, officia excepturi aliquam vel doloribus
+            suscipit? Assumenda nulla placeat cupiditate iusto quisquam, alias ducimus mollitia, sint veniam similique
+            quia eveniet eos voluptatibus dolor?</p>
+        <p>Suscipit dicta repellat quo laboriosam, eum similique sit nulla rerum neque praesentium, voluptas eos odit
+            mollitia aspernatur, exercitationem officia delectus? Molestiae quam consequatur quo magnam nihil labore
+            porro dolor distinctio.</p>
+        <p>Vitae, doloribus omnis et dicta facere nemo assumenda autem aliquid minus, voluptate perferendis maiores
+            provident aperiam id. Animi necessitatibus suscipit corporis eius laudantium rem, veniam tempore, quaerat
+            odit ullam quis!</p>
+        <p>Hic dignissimos dicta explicabo, laboriosam adipisci omnis magnam asperiores consequuntur, repellendus
+            laborum mollitia voluptate natus cum molestiae debitis modi vel, veniam reiciendis nemo repellat quasi
+            perspiciatis minus. Animi, deserunt delectus?</p>
+        <p>Commodi odio id facere neque fuga ea placeat hic. Voluptatibus consequatur eum laborum saepe laudantium!
+            Aspernatur a tempore consectetur, necessitatibus atque, reiciendis aut cupiditate molestiae eos minima
+            quibusdam, at quas.</p>
+        <p>Sit sapiente quo tempora maxime perspiciatis modi nobis quaerat ipsa, assumenda repellat quam, recusandae
+            quis. Quas fuga numquam pariatur iste ipsam assumenda expedita, aliquam dolores reprehenderit ut tenetur
+            dignissimos aspernatur.</p>
+        <p>Maiores fugit expedita eligendi nostrum vero nemo mollitia tempora veritatis id ipsa inventore ipsum placeat
+            sit, magnam sunt praesentium quibusdam, dignissimos repudiandae illum? Illo odit incidunt aliquam? Quia,
+            magnam. Nisi!</p>
+    </section>
+    <!-- section.zone3>p*15>lorem30
+        grille facilement
+    -->
+    <style>
+        .zone3 {
+            display: flex;
+            /*tout aligner que la même ligne*/
+            flex-wrap: wrap;
+            /*wrap : emballage 
+                nowrap valeur par défaut
+                wrap revient à la ligne 
+            */
+            justify-content: space-between;
+        }
+
+        .zone3>p {
+            width: 30%;
+            margin: 10px 0;
+            border: 1px solid purple;
+        }
+    </style>
+
+
+</body>
+
+</html>
