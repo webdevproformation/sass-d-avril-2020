@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="02-style.css">
+</head>
+
+<body>
+    <!-- 
+        1 design : sous forme écrite ou sous forme image
+        2 zoning : découper le design en zones : légo / carré / ingrédients
+            on peut le faire via une feuille 
+        3 codage en html => mettre une balise html par zone
+                        => bien faire attention l'imbrication (poupées russes )
+                        section contient tout le design
+                        dans la section j'ai deux zones frères entete + corps
+                        dans chaque zone liste / p / h1 / h2 ....
+        4 flex box ?? qu'elles sont les éléments / balises html qui sont alignées ??
+                les li qui sont les uns à côtés dans la zone entête
+                les p et img sont les uns à côtés des autres 
+                => leur parent directement display:flex
+        5 finir la mise en page 
+            margin / padding / background / border / border-radius / font-size / color .... 
+
+        méthode pour intégrer un design :
+        quelque soit le design à intégrer je l'applique 
+    -->
+    <section class="onglet">
+        <div class="entete">
+            <!-- ul>li*3>lorem1 -->
+            <ul>
+                <li class="first">Lorem.</li>
+                <li class="second">Ipsum.</li>
+                <li class="last">Nesciunt?</li>
+            </ul>
+        </div>
+        <div class="corps">
+            <!-- ul>li*3>img+p>lorem5 -->
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/40x40" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/40x40" alt="">
+                    <p>Ipsa suscipit vitae doloribus eius?</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/40x40" alt="">
+                    <p>Porro cumque soluta quidem quaerat.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

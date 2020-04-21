@@ -1,0 +1,92 @@
+/*
+mettre en place les flex box 
+etape 4
+*/
+
+.entete ul{
+    display: flex;
+}
+
+.corps li{
+    display: flex;
+    align-items: center;
+}
+
+/*
+ partie 5 mis en forme
+*/
+
+/*
+reset : remettre à zéro
+enlever tous règles css mise par défaut 
+par le navigateur
+p
+ul
+li
+=> marge et de padding 
+*/
+
+p , ul , li {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* mis en forme*/
+
+.onglet{
+    width: 300px;
+    border:1px solid grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/*zone entete*/
+
+.entete li{
+    width:33.333%;
+    padding: 10px 0;
+    text-align:center;
+    background-color:blue;
+    color:#fff;
+    font-weight: 700;
+}
+
+.entete li.second, .entete li.last { 
+    background-color:#ccc;
+    color:grey;
+}
+
+.entete li.second{
+    border-right : 1px solid #fff;
+    border-left : 1px solid #fff;
+}
+
+.entete li.first{
+    border-top-left-radius: 5px;
+}
+
+.entete li.last{
+    border-top-right-radius: 5px;
+}
+
+/*
+    zone corps
+*/
+
+.corps li{
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.corps li:last-child{
+    border-bottom: none;
+}
+
+.corps li img {
+    margin-right: 10px;
+}
