@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* 01-style.scss*/
+/*
+dans ce fichier nous allons écrire du scss
+avant de commencer à saisir je vous conseille de cliquer que le 
+une fois cliqué => Watching... = attend que vous saissiez des lignes dans le fichier scss
+
+vous pouvez fermer la zone du bas
+
+en +, généré un fichier css => qui va être la traduction du fichier en cours de saisie
+
+en + un fichier technique .map (nous allons le voir)
+
+attention !!!!!!!!!!!!
+il ne faut pas écrire dans le fichier .css et dans le fichier .map
+nous allons saisir UNIQUEMENT dans le le fichier scss 
+c'est le logiciel qui va être en charge d'écrire les fichiers .css et .map
+
+Dans le support de cours => toutes les techniques que l'on va apprendre sont 
+dans le jour2
+
+Techniques qui sont disponibles sur SASS : 
+Nesting 
+Héritage
+Variable
+Partial => découper nos fichiers scss en plusieurs fichiers =>partials
+Fonction @mixin
+Boucles et conditions dans scss 
+pleins de fonctions de sass (Build in functions)
+
+Avantage de SASS => au fur et à mesure que vous allez écrire dans le fichier scss => le logiciel va vérifier que vous ne faîtes pas d'erreur de syntaxe
+    ;
+    :
+transpilation (traduction en css) va être réalisée lorsque vous enregistrer le fichier scss Ctrl + S
+
+Attention ne pas créer les fichiers css et css.map 
+c'est le logiciel qui le fait !!!! 
+Attention vous ne devez pas écrire dans les fichiers css et css.map 
+c'est le logiciel qui le fait !!!! 
+
+
+*/
+/*# sourceMappingURL=01-style.css.map */
