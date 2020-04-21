@@ -1,0 +1,52 @@
+/*
+créer un fichier 03-style.scss 
+pour l'instant l'idée c'est de découvrir les techniques de ce nouveau langage
+ne pas créer de fichier .html
+
+sass --watch 03-style.scss 03-style.css
+*/
+
+// 1 les commentaires en sass
+
+// commentaire on peut les faire avec // 
+/*
+    commentaire
+    multiligne
+*/
+
+// commentaire monoligne (attention cette syntaxe n'est pas disponible en css classique)
+
+// 2 nesting => imbrication
+
+p{
+    color : green ;
+}
+
+p a {
+    color : blue;
+} // css pur et dur
+
+// fusionner ces deux règles en 1 seule => nesting => imbriqué
+// imbriqué les sélecteurs
+
+p {
+    color : black ;
+    a {
+        color : blue;
+        font-size: 20px;
+    }
+    span{
+        color:red;
+    }
+    a.presentation{
+        text-decoration: none;
+    }
+    &:hover{ // pour faire du nesting avec :hover :last-child  & 
+        color:pink;
+    }
+    /*aussi pour le responsive design*/
+    @media screen and (max-width : 700px){
+        color: white;
+    }
+}
+

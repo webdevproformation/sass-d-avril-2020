@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*
+créer un fichier 03-style.scss 
+pour l'instant l'idée c'est de découvrir les techniques de ce nouveau langage
+ne pas créer de fichier .html
+
+sass --watch 03-style.scss 03-style.css
+*/
+/*
+    commentaire
+    multiligne
+*/
+p {
+  color: green;
+}
+
+p a {
+  color: blue;
+}
+
+p {
+  color: black;
+  /*aussi pour le responsive design*/
+}
+
+p a {
+  color: blue;
+  font-size: 20px;
+}
+
+p span {
+  color: red;
+}
+
+p a.presentation {
+  text-decoration: none;
+}
+
+p:hover {
+  color: pink;
+}
+
+@media screen and (max-width: 700px) {
+  p {
+    color: white;
+  }
+}
+/*# sourceMappingURL=03-style.css.map */
