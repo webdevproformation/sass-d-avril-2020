@@ -21,6 +21,12 @@ p a {
 p {
   color: black;
   /*aussi pour le responsive design*/
+  /*règle css => 
+        si la taille de l'écran = média largeur maximum de 700px 
+        @media média query => règle css 
+        google alsacreation media query 
+        https://www.alsacreations.com/article/lire/930-css3-media-queries.html
+    */
 }
 
 p a {
@@ -43,6 +49,60 @@ p:hover {
 @media screen and (max-width: 700px) {
   p {
     color: white;
+    color: purple;
   }
+}
+
+.btn, p, .onglet {
+  color: white;
+  border: 1px solid green;
+  padding: 10px 20px;
+}
+
+.titre, p {
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: pink;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/*le fait de créer des variables elles ne sont pas inscrites dans le fichier css*/
+h1 {
+  color: #f6d198;
+  border: 1px solid #7ebdb4;
+  background: #f4a548;
+}
+
+/* dans une variable sass, il est possible de stocker plus qu'une valeur*/
+h2 {
+  padding: 10px 20px 30px 40px;
+  border: 1px solid green;
+  border: 1px solid pink;
+}
+
+/* suite et fin des variables en sass
+
+utiliser les variables dans la partie sélecteur
+*/
+div ul li.onglet {
+  color: red;
+}
+
+.onglet {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+
+p {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 20px;
 }
 /*# sourceMappingURL=03-style.css.map */

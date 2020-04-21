@@ -45,8 +45,119 @@ p {
         color:pink;
     }
     /*aussi pour le responsive design*/
+    /*règle css => 
+        si la taille de l'écran = média largeur maximum de 700px 
+        @media média query => règle css 
+        google alsacreation media query 
+        https://www.alsacreations.com/article/lire/930-css3-media-queries.html
+    */
     @media screen and (max-width : 700px){
         color: white;
+        color : purple;
     }
 }
 
+// 3 héritage = extend 
+
+// @extend => mot clé qui n'existe pas en css classique
+// mot qui est disponible uniquement en sass 
+
+.btn{
+    color : white ;
+    border:1px solid green;
+    padding: 10px 20px;
+}
+
+.titre{
+    font-weight: 900;
+    letter-spacing: 5px;
+    color : pink ;
+}
+
+p{
+    @extend .btn; // héritage 
+    @extend .titre; // héritage 
+    text-align:center;
+    font-size: 20px;
+}
+
+// 4 variable : créer des variables dans notre feuille sass
+// si je veux créer une variable dans sass 
+// toutes les variables doivent commencer le symbole $
+// dans le nom de la variable 
+// $ pas d'espace _ - 
+// 
+$dimensionFenetre : 10px ; 
+
+$largeur : 10px 20px; 
+$bleu : rgb(42, 22, 216);
+// google color hunt => https://colorhunt.co/
+$turquoise : #7ebdb4;
+$pastel : #f6d198;
+$orange : #f4a548 ;
+
+/*le fait de créer des variables elles ne sont pas inscrites dans le fichier css*/
+
+h1{
+    color : $pastel;
+    border : 1px solid $turquoise;
+    background: $orange;
+}
+
+/* dans une variable sass, il est possible de stocker plus qu'une valeur*/
+$rose : pink;
+$marges : 10px 20px 30px 40px;
+$bordure : 1px solid green;
+$bordure-rose : 1px solid $rose;
+
+h2{
+    padding : $marges;
+    border : $bordure;
+    border : $bordure-rose;
+}
+
+/* suite et fin des variables en sass
+
+utiliser les variables dans la partie sélecteur
+*/
+
+$onglet : "div ul li.onglet" ;
+
+#{$onglet}{
+    color: red;
+}
+
+$globale : ".onglet";
+$zone1 : ".entete" ;
+$zone2 : ".corps";
+
+#{$globale}{
+    width:300px;
+    margin: 0 auto;
+    border:$bordure;
+    @extend .btn;
+}
+
+// 5 partial => découper votre page scss en plusieurs fichiers 
+
+// permet de structure son code sass en plusieurs fichiers
+// reset.scss
+// onglet.scss
+// menu.scss
+// d'avoir des pages scsc courtes 
+// lorsque la transpilation est effectuée dans un fichier css
+// 10 fichiers scss => 1 fichier css 
+
+// créer un nouveau fichier _03-reset.scss
+
+@import "_03-reset.scss" ;
+
+// exécuté le fichier 03-style.scss 
+// ce fichier contient @import "_03-reset.scss" ;
+
+// généré le fichier 03-style.css
+
+
+// demain Mixin @mixin / @include
+// Condition @if @else
+// Boucle @for @each
