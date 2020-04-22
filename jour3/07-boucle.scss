@@ -1,2 +1,27 @@
 // 07-boucle.scss 
 
+// javascript for => répéter la même instrution plusieurs fois 
+// css ça n'existe pas 
+// par contre en sass, ils ont ajouté ce mot clé 
+// syntaxe est la suivante 
+
+@for $i from 1 through 30{
+    .zone#{$i}{ // ajoute une variable dans le sélecteur 
+        width:30px;
+        height:20px;
+    }
+}
+
+
+// combo
+@mixin image ($nb , $couleur){
+    @for $i from 1 through $nb{
+        .zone#{$i}{ // ajoute une variable dans le sélecteur 
+            width:30px;
+            height:20px;
+            color : $couleur ;
+        }
+    }
+}
+
+@include image (5 , blue);
