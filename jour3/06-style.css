@@ -1,0 +1,24 @@
+.btn {
+  padding: 10px 20px;
+  background: grey;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-supprimer {
+  padding: 10px 20px;
+  background: red;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-valider {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=06-style.css.map */
