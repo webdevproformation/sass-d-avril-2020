@@ -1,0 +1,66 @@
+$l : 200px ; // largeur / hauteur d'un block
+$m : 15px ;
+
+.zone1 {
+    width: $l * 2 + $m;  // 110px
+    height: $l;
+    background: green;
+    margin-bottom: $m;
+}
+
+.zone2,
+.zone3 {
+    width: $l; // 50px
+    height: $l; //50px
+    background: green;
+}
+
+.zone2 {
+    margin-right: $m; // 10px
+}
+
+.start {
+    display: flex;
+    width: $l * 2 + $m ; // 110px
+    flex-wrap: wrap;
+}
+
+.zone4 {
+    height:  $l * 2 + $m ; // 110px
+    width: $l; // 50px
+    background: darkmagenta;
+    margin-left: $m; //10px
+}
+
+.start2 {
+    display: flex;
+    width:  calc($l * 2 + $m  + $m + $l);
+}
+
+.zone5 {
+    margin-top: $m;
+    width: calc($l + $m + $l + $m + $l);
+    height: $l;
+    background-color: greenyellow;
+}
+
+.zone6 {
+    width: $l;
+    height: $l;
+    background-color: grey;
+    margin-bottom: $m;
+}
+
+.zone7 {
+    width: $l;
+    height: $l + $m + $l ;
+    background-color: hotpink;
+}
+
+.start4 {
+    margin-left: $m;
+}
+
+.container {
+    display: flex;
+}

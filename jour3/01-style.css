@@ -1,0 +1,71 @@
+.zone1 {
+  width: 415px;
+  height: 200px;
+  background: green;
+  margin-bottom: 15px;
+}
+
+.zone2,
+.zone3 {
+  width: 200px;
+  height: 200px;
+  background: green;
+}
+
+.zone2 {
+  margin-right: 15px;
+}
+
+.start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 415px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.zone4 {
+  height: 415px;
+  width: 200px;
+  background: darkmagenta;
+  margin-left: 15px;
+}
+
+.start2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc($l * 2 + $m  + $m + $l);
+}
+
+.zone5 {
+  margin-top: 15px;
+  width: calc($l + $m + $l + $m + $l);
+  height: 200px;
+  background-color: greenyellow;
+}
+
+.zone6 {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  margin-bottom: 15px;
+}
+
+.zone7 {
+  width: 200px;
+  height: 415px;
+  background-color: hotpink;
+}
+
+.start4 {
+  margin-left: 15px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=01-style.css.map */
