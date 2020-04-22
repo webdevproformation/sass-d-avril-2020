@@ -1,0 +1,58 @@
+// nous avons vu hier 5 techniques
+
+// nesting => imbrication 
+// éviter de répéter les sélecteurs
+
+
+div {
+    color: grey;
+    /* vous pouvez imbriquer une sélecteur dans un autre*/
+    p{
+        width: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    /* si on a le cas de fichier :hover*/
+
+    &:hover{ // ne pas oublier le & commerciale
+        color:red;
+    }
+
+    /* responsive design => media query
+    // si l'écran a une taille inférieure ou égale à 700px
+    alors appliquer les règles css entre les accolades
+    @media (max-width:700px){ 
+    }*/
+
+    @media (max-width:700px){
+        color:pink;
+    }
+}
+
+// héritage @extend
+// il arrive souvent en css que l'on repète 
+// quasiment toutes les règles d'une autre élément
+
+// bouton 
+
+.btn{
+    font-size: 20px;
+    padding: 10px 20px;
+    border:1px solid grey;
+    border-radius: 5px;
+}
+
+p{
+    padding: 20px;
+    @extend .btn; // @extend  => étendre hériter
+    color:grey;
+    letter-spacing: 2px;
+}
+
+h1{
+    @extend p;
+}
+
+

@@ -1,0 +1,55 @@
+
+
+.btn{
+    background: #ccc;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn-valider{
+    color:white;
+    background:green; // prioritaire !
+    @extend .btn;
+}
+
+.btn-supprimer{
+    @extend .btn-valider;
+    background:red; 
+}
+
+/*
+solution alternative
+.btn-supprimer{
+    @extend .btn;
+    background:red; 
+     color:white;
+}
+*/
+
+.btn-supprimer-lien{
+    @extend .btn-supprimer;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 0.8em;
+}
+
+.miniature{
+    border-radius: 5px;
+    padding:5px;
+    background-color: black;
+    border:1px solid grey;
+}
+
+.miniature-arrondie{
+    @extend .miniature;
+    background-color: white;
+    border-radius: 75px; // hauteur / 2 
+}
+
+.miniature-rectangle{
+    @extend .miniature-arrondie ;
+    border-radius:0;
+    border: 1px solid black;
+}
+

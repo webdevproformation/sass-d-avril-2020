@@ -1,0 +1,47 @@
+.btn, .btn-valider, .btn-supprimer, .btn-supprimer-lien {
+  background: #ccc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-valider, .btn-supprimer, .btn-supprimer-lien {
+  color: white;
+  background: green;
+}
+
+.btn-supprimer, .btn-supprimer-lien {
+  background: red;
+}
+
+/*
+solution alternative
+.btn-supprimer{
+    @extend .btn;
+    background:red; 
+     color:white;
+}
+*/
+.btn-supprimer-lien {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 0.8em;
+}
+
+.miniature, .miniature-arrondie, .miniature-rectangle {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid grey;
+}
+
+.miniature-arrondie, .miniature-rectangle {
+  background-color: white;
+  border-radius: 75px;
+}
+
+.miniature-rectangle {
+  border-radius: 0;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=04-style.css.map */

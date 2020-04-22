@@ -1,0 +1,43 @@
+@charset "UTF-8";
+div {
+  color: grey;
+  /* vous pouvez imbriquer une sélecteur dans un autre*/
+  /* si on a le cas de fichier :hover*/
+  /* responsive design => media query
+    // si l'écran a une taille inférieure ou égale à 700px
+    alors appliquer les règles css entre les accolades
+    @media (max-width:700px){ 
+    }*/
+}
+
+div p, div h1 {
+  width: 20px;
+}
+
+div h1 {
+  font-size: 30px;
+}
+
+div:hover {
+  color: red;
+}
+
+@media (max-width: 700px) {
+  div {
+    color: pink;
+  }
+}
+
+.btn, p, h1 {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+p, h1 {
+  padding: 20px;
+  color: grey;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=03-style.css.map */
