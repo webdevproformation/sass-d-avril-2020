@@ -1,0 +1,48 @@
+p {
+  margin: 10px 20px;
+  width: 10px;
+  height: 30px;
+  border: 1px solid grey;
+}
+
+.miniature {
+  width: 100%;
+}
+
+#top {
+  height: 40px;
+}
+
+form .envoyer {
+  border-radius: 10px;
+}
+
+/* $galerie{
+    width: 200px;
+} */
+img {
+  border: 1px solid grey;
+  -webkit-box-shadow: 1px 1px blue;
+          box-shadow: 1px 1px blue;
+  padding: 5px;
+}
+
+.btn, .btn2 {
+  border: 1px solid grey;
+  -webkit-box-shadow: 1px 1px blue;
+          box-shadow: 1px 1px blue;
+  padding: 5px;
+}
+
+.map {
+  border: 1px solid red;
+  width: 100px;
+  height: 200px;
+}
+
+.search-box {
+  border: 1px solid green;
+  width: 400px;
+  height: 500px;
+}
+/*# sourceMappingURL=05-style.css.map */

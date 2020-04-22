@@ -1,0 +1,78 @@
+// variable en scss
+
+//créer la variable qui stockent des valeurs
+$largeur : 20px;
+$sep : 10px 20px;
+$bordure : 1px solid grey ;
+
+// utiliser une variable comme valeur 
+
+p{
+    margin : $sep;
+    width: $largeur / 2; // effectuer des calculs 
+    height : $largeur + 10px;
+    border : $bordure ;
+}
+
+// variables qui stockent des sélecteurs
+
+$galerie : ".miniature";
+$entete : "#top";
+$bouton : "form .envoyer";
+
+
+#{$galerie}{
+    width: 100%;
+}
+
+#{$entete}{
+    height:40px;
+}
+
+#{$bouton}{
+    border-radius: 10px;
+}
+
+/* $galerie{
+    width: 200px;
+} */
+
+
+// mixin 
+// créer des fonctions 
+
+@mixin miniature{
+    border: 1px solid grey;
+    box-shadow: 1px 1px blue;
+    padding: 5px;
+}
+
+img{
+    @include miniature;
+}
+
+
+.btn{
+    border: 1px solid grey;
+    box-shadow: 1px 1px blue;
+    padding: 5px;    
+}
+
+.btn2{
+    @extend .btn;
+}
+
+
+@mixin widget($largeur, $hauteur , $couleur){
+    border: 1px solid $couleur;
+    width : $largeur ;
+    height :  $hauteur;
+} 
+
+.map{
+    @include widget(100px , 200px , red);
+}
+
+.search-box{
+    @include widget(400px , 500px , green);
+}
