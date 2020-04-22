@@ -1,0 +1,57 @@
+$largeur : 150px;
+$sep : 10px;
+
+// créer deux variables dans le fichier sass
+// remplacer toutes les valeurs 50px par $largeur
+// remplacer toutes les valeurs 10px par $sep
+// enlevé calc( 
+//  enlevé )
+
+/* sass c'est du css */
+.zone1 {
+    width: $largeur;
+    height: $largeur;
+    background: #7ebdb4;
+    /*color hunt pour avoir une palette de couleur jolie*/
+}
+
+.zone2 {
+    width: $largeur;
+    height: $largeur;
+    background: #f6d198;
+    margin-left: $sep;
+}
+
+.zone3 {
+    width: $largeur + $sep + $largeur;
+    height: $largeur;
+    background: #f4a548;
+    margin-top: $sep;
+}
+
+.zone4 {
+    width: $largeur;
+    height: $largeur + $sep + $largeur;
+    background: #862a5c;
+    margin-left: $sep;
+}
+
+.zone5 {
+    width: $largeur + $sep + $largeur + $sep + $largeur;
+    height: $largeur;
+    background: #f6acc8;
+    margin-top: 10px;
+}
+
+.start {
+    display: flex;
+    width: $largeur + $sep + $largeur;
+    /*  justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.start2 {
+    display: flex;
+}
+
+/*optimiser mon css == eviter les répétitions dans mon code css, ce que je peux c'est utiliser sass */

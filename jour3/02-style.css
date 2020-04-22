@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* sass c'est du css */
+.zone1 {
+  width: 150px;
+  height: 150px;
+  background: #7ebdb4;
+  /*color hunt pour avoir une palette de couleur jolie*/
+}
+
+.zone2 {
+  width: 150px;
+  height: 150px;
+  background: #f6d198;
+  margin-left: 10px;
+}
+
+.zone3 {
+  width: 310px;
+  height: 150px;
+  background: #f4a548;
+  margin-top: 10px;
+}
+
+.zone4 {
+  width: 150px;
+  height: 310px;
+  background: #862a5c;
+  margin-left: 10px;
+}
+
+.zone5 {
+  width: 470px;
+  height: 150px;
+  background: #f6acc8;
+  margin-top: 10px;
+}
+
+.start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 310px;
+  /*  justify-content: space-between; */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.start2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*optimiser mon css == eviter les répétitions dans mon code css, ce que je peux c'est utiliser sass */
+/*# sourceMappingURL=02-style.css.map */
