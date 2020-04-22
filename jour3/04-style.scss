@@ -39,6 +39,12 @@ solution alternative
     padding:5px;
     background-color: black;
     border:1px solid grey;
+    // box shadow => mettre une ombre sur une élément html
+    box-shadow: 4px 3px 10px green;
+    // 2px décalage sur l'axe horizontale de l'ombre
+    // 3px décalage sur l'axe vertical de l'ombre
+    // 0px flou = blur
+    // couleur de l'ombre 
 }
 
 .miniature-arrondie{
