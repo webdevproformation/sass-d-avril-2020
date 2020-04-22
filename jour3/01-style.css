@@ -1,35 +1,35 @@
 .zone1 {
-  width: 415px;
-  height: 200px;
+  width: 110px;
+  height: 50px;
   background: green;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .zone2,
 .zone3 {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   background: green;
 }
 
 .zone2 {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 415px;
+  width: 110px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .zone4 {
-  height: 415px;
-  width: 200px;
+  height: 110px;
+  width: 50px;
   background: darkmagenta;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .start2 {
@@ -40,27 +40,27 @@
 }
 
 .zone5 {
-  margin-top: 15px;
+  margin-top: 10px;
   width: calc($l + $m + $l + $m + $l);
-  height: 200px;
+  height: 50px;
   background-color: greenyellow;
 }
 
 .zone6 {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   background-color: grey;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .zone7 {
-  width: 200px;
-  height: 415px;
+  width: 50px;
+  height: 110px;
   background-color: hotpink;
 }
 
 .start4 {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .container {

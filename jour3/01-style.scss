@@ -1,10 +1,10 @@
-$l : 200px ; // largeur / hauteur d'un block
-$m : 15px ;
+$l : 50px ; // largeur / hauteur d'un block
+$m : 10px ;
 
 .zone1 {
     width: $l * 2 + $m;  // 110px
     height: $l;
-    background: green;
+    background: green; // l 1
     margin-bottom: $m;
 }
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- .container contient l'ensemble du design-->
+        <!-- div.zone$*5>lorem1 -->
+        <section class="start2">
+            <section class="start">
+                <div class="zone1">poire.</div>
+                <div class="zone2">pomme.</div>
+                <div class="zone3">abricot?</div>
+            </section>
+            <div class="zone4">pêche.</div>
+        </section>
+        <div class="zone5">banane.</div>
+    </div>
+    <style>
+        .zone1 {
+            width: 50px;
+            height: 50px;
+            background: #7ebdb4;
+            /*color hunt pour avoir une palette de couleur jolie*/
+        }
+
+        .zone2 {
+            width: 50px;
+            height: 50px;
+            background: #f6d198;
+            margin-left: 10px;
+        }
+
+        .zone3 {
+            width: calc(50px + 10px + 50px);
+            height: 50px;
+            background: #f4a548;
+            margin-top: 10px;
+        }
+
+        .zone4 {
+            width: 50px;
+            height: calc(50px + 10px + 50px);
+            background: #862a5c;
+            margin-left: 10px;
+        }
+
+        .zone5 {
+            width: calc(50px + 10px + 50px + 10px + 50px);
+            height: 50px;
+            background: #f6acc8;
+            margin-top: 10px;
+        }
+
+        .start {
+            display: flex;
+            width: calc(50px + 10px + 50px);
+            /*  justify-content: space-between; */
+            flex-wrap: wrap;
+        }
+
+        .start2 {
+            display: flex;
+        }
+    </style>
+</body>
+
+</html>
