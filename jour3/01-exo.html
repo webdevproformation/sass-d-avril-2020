@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- div.zone$*7>lorem1 -->
+        <section class="start3">
+            <section class="start2">
+                <section class="start">
+                    <div class="zone1">sapin</div>
+                    <div class="zone2">balance</div>
+                    <div class="zone3">loupe</div>
+                </section>
+                <div class="zone4">encre</div>
+            </section>
+            <div class="zone5">baignoire</div>
+        </section>
+        <section class="start4">
+            <div class="zone6">atom</div>
+            <div class="zone7">pomme</div>
+        </section>
+    </div>
+
+    <!-- display : flex => -->
+
+    <style>
+        .zone1 {
+            width: 110px;
+            height: 50px;
+            background: green;
+            margin-bottom: 10px;
+        }
+
+        .zone2,
+        .zone3 {
+            width: 50px;
+            height: 50px;
+            background: green;
+        }
+
+        .zone2 {
+            margin-right: 10px;
+        }
+
+        .start {
+            display: flex;
+            width: 110px;
+            flex-wrap: wrap;
+        }
+
+        .zone4 {
+            height: 110px;
+            width: 50px;
+            background: darkmagenta;
+            margin-left: 10px;
+        }
+
+        .start2 {
+            display: flex;
+            width: calc(110px + 10px + 50px);
+        }
+
+        .zone5 {
+            margin-top: 10px;
+            width: calc(50px + 10px + 50px + 10px + 50px);
+            height: 50px;
+            background-color: greenyellow;
+        }
+
+        .zone6 {
+            width: 50px;
+            height: 50px;
+            background-color: grey;
+            margin-bottom: 10px;
+        }
+
+        .zone7 {
+            width: 50px;
+            height: calc(50px + 10px + 50px);
+            background-color: hotpink;
+        }
+
+        .start4 {
+            margin-left: 10px;
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+</body>
+
+</html>

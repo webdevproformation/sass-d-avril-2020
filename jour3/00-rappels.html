@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+ par défaut, il existe deux types de balises
+ balise en block : div / p / li / h1 / h2 ... h6 / ul ... section / footer / header hr .... body
+
+ - largeur du parent
+ - la hauteur du contenu
+ - saut de ligne OBLIGATOIRE
+ - accepte les propriétés css width / height / margin
+
+-->
+    <div>h</div>
+    <p>Bonjour</p>
+    <style>
+        div {
+            width: 300px;
+            background: red;
+        }
+
+        p {
+            width: 200px;
+            background: green;
+        }
+    </style>
+
+    <!--
+ balise en ligne :  span / a / img / i / b / u / mark / input / label / textarea / br
+ ....
+
+        largeur du contenu
+        hauteur du contenu
+        à la suite (adjacent)
+        acceptent pas largeur / hauteur / margin
+
+-->
+
+
+    <span>First</span>
+    <a href="#">Coucou</a>
+    <style>
+        span {
+            background: cyan;
+            width: 200px;
+        }
+
+        a {
+            background: darkgrey;
+            width: 300px;
+        }
+    </style>
+
+    <!-- 
+        display: inline-block;
+        float: left / right; + clear: both ;
+        
+        pouvoir mixer les deux en même temps
+
+        définir des largeurs 
+        définirt des hauteurs
+        adjacents
+
+        => display flex
+    -->
+
+    <hr>
+    <section>
+        <span>First</span>
+        <a href="#">Coucou</a>
+    </section>
+
+    <section>
+        <div>h</div>
+        <p>Bonjour</p>
+    </section>
+
+    <section>
+        <div>h</div>
+        <p>Bonjour</p>
+        <span>First</span>
+        <a href="#">Coucou</a>
+    </section>
+
+    <style>
+        section {
+            display: flex;
+        }
+    </style>
+
+
+    <hr>
+
+    <!-- 
+               top
+        -----------------
+    left|               | right
+        -----------------
+             bottom
+
+    margin : 1px 2px 3px 4px ; // sens des aiguilles d'une montre
+    margin : 10px 20px 30px ; // ??? top right/left bottom 
+    margin : 0 auto ; top/bottom left/right
+    margin: 20px ; 4 côté d'un coup
+    -->
+
+    <footer>
+        <h2>lorem</h2>
+        <h3>sous titre</h3>
+    </footer>
+
+    <style>
+        footer {
+            background: #7ebdb4;
+            height: 80px;
+            padding: 1px 0;
+        }
+
+        h2 {
+            background: #f6d198;
+            margin: 19px 0;
+            padding: 1px 0;
+        }
+
+        h3 {
+            margin: 19px 0;
+            padding: 1px 0;
+        }
+    </style>
+
+</body>
+
+</html>
