@@ -45,11 +45,30 @@
             justify-content: center;
             min-height: 100vh;
             align-items: center;
+            overflow: hidden;
         }
 
         .container {
             display: flex;
             align-items: center;
+
+        }
+
+        .formulaire {
+            transform: translateX(-2000px);
+            margin-right: 20px;
+            animation: 3s apparition forwards;
+        }
+
+        .map {
+            transform: translateX(2000px);
+            animation: 3s apparition forwards;
+        }
+
+        @keyframes apparition {
+            100% {
+                transform: translateX(0);
+            }
         }
 
         /*faire apparaitre le formulaire à gauche 
