@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://via.placeholder.com/400x200" alt="">
+    <style>
+        img {
+            animation: 3s mouvement infinite linear;
+        }
+
+        @keyframes mouvement {
+            from {
+                transform: translateX(0);
+                /*point de départ*/
+            }
+
+            to {
+                transform: translateX(450px);
+            }
+        }
+    </style>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod non fugit dignissimos necessitatibus,
+        ipsum est eum libero consectetur quis soluta, quibusdam explicabo praesentium sequi. Quia dignissimos ipsa
+        adipisci beatae?</p>
+    <style>
+        p {
+            width: 400px;
+            border: 1px solid grey;
+            padding: 0 10px;
+            animation: 3s rebondir infinite;
+        }
+
+        @keyframes rebondir {
+            0% {
+                /* from */
+                transform: translateX(0);
+                /* translate( 0,0 ) */
+            }
+
+            50% {
+                /* transform: translateX(450px); */
+                transform: translate(450px, 0);
+            }
+
+            100% {
+                /* to */
+                transform: translateX(0);
+            }
+        }
+    </style>
+
+    <!-- 
+        
+
+    -->
+
+</body>
+
+</html>

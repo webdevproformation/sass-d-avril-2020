@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p class="zone1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellendus repudiandae unde consectetur nobis
+        cupiditate amet ratione officiis itaque excepturi. Labore ab eum quasi veritatis doloribus mollitia, odio quas
+        possimus!
+    </p>
+
+    <style>
+        body {
+            overflow: hidden;
+            /* permet d'éviter d'avoir un scroll si l'élément sort de la zone 
+                                cette propriété doit être écrite sur le parent directe de l'élément qui déborde              
+            */
+        }
+
+        .zone1 {
+            width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid grey;
+            transform: translateX(2000px);
+            /* permet de masquer un élément */
+            animation: 2s apparition forwards;
+            /* forwards : fill mode à la fin de l'animation garde la situation finale */
+        }
+
+        @keyframes apparition {
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+    <!-- créer une nouvelle page html 03-exo.html 
+        cette page contient deux paragraphes .zone1 et .zone2
+        zone1 apparaitre de la droite
+        zone2 apparaitre de la gauche 
+    -->
+
+
+</body>
+
+</html>
