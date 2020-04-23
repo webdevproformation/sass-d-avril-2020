@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- p.zone$*2>lorem -->
+    <p class="zone1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos at, sed, laborum tempora,
+        sunt ducimus tempore eligendi ut earum recusandae distinctio optio laboriosam animi non quod ea tenetur minima.
+    </p>
+    <p class="zone2">Soluta, saepe minima! Ipsa maiores perferendis rem, cum ipsum natus quia praesentium saepe
+        voluptatibus laudantium ullam omnis, expedita id tempora dolorem temporibus aspernatur assumenda quis distinctio
+        odio autem repellat illo!</p>
+    <style>
+        body {
+            overflow: hidden;
+            /* ne pas afficher de scrollbar : barre de défilement du navigateur */
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        .zone1 {
+            transform: translateX(2000px);
+            animation: 2s apparition forwards;
+        }
+
+        .zone2 {
+            transform: translateX(-2000px);
+            animation: 2s apparition forwards;
+        }
+
+        @keyframes apparition {
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</body>
+
+</html>
