@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        sass + animation en css
+
+        transition
+        animation + @keyframes
+    -->
+
+    <div class="introduction">
+        <h1>Introduction</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eos odio accusantium odit consequatur
+            quod eius pariatur, ut accusamus minima nam rerum sunt rem! Voluptatum ut quo iste fugiat adipisci.</p>
+    </div>
+
+    <style>
+        /*je mets le css dans le html ici pour éviter de créer un autre fichier
+            normalement le mieux est de créer un fichier .css à part pour fire du css
+        */
+
+        .introduction {
+            width: 400px;
+            border: 1px solid grey;
+            padding: 0 10px;
+
+            /*pour faire de l'animation en css utiliser une règle transform*/
+            /* transform: translateX(-100px); */
+            /* déplacer horizontalement un élément html */
+            /* si la valeur dans les parenthèses est positive => déplacer vers la droite 
+                chiffre négatif : alors déplacer horizontalement vers la gauche
+            */
+            /*
+                déplacer horizontalement sur 2 secondes 
+            */
+            animation: 5000s deplacementHorizontal infinite ease-in-out;
+            /* 2s = duree animation  | 2000ms | 300ms
+            nom de l'animation deplacementHorizontal : nom de l'animation que l'on va définir dans @keyframes 
+            infinite : nombre de fois que l'on veut que l'animation soit exécutée
+            manière de générer la vitesse de déplacement de l'animation ease => timing function 
+            */
+        }
+
+        @keyframes deplacementHorizontal {
+            from {
+                /*situation de départ */
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+    </style>
+    <!--
+        créer une nouvelle page 01-exo.html => 
+        image pour dimension 400 x 200 => 
+        réaliser l'animation suivante : déplacer vers la droite de 450px l'image à l'infinie sur une durée de 3 secondes (choisir la vitesse de déplacement de votre choix)
+    -->
+
+</body>
+
+</html>
