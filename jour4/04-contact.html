@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        zoning :
+
+        .container
+            .formulaire
+                form
+                    input
+                    button
+            .map
+                iframe => google map
+
+    -->
+
+    <div class="container">
+        <div class="formulaire">
+            <!-- form>input+button -->
+            <form action="">
+                <input type="text">
+                <button>S'inscrire à la newsletter</button>
+            </form>
+        </div>
+        <div class="map">
+            <!-- google map > https://www.google.com/maps > tape adresse > partager > onglet intégrer-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991625693759!2d2.2922926151597465!3d48.85837007928747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1587634477462!5m2!1sfr!2sfr"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+    </div>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        /*faire apparaitre le formulaire à gauche 
+        faire apparaitre la google map depuis la droite*/
+    </style>
+
+
+</body>
+
+</html>
