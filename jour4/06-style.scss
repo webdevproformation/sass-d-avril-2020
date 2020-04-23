@@ -1,0 +1,51 @@
+@mixin box{
+    border: 1px solid grey;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.contenu {
+    width: 60%;
+    @include box;
+    animation: 3s apparitionBas linear;
+}
+
+@keyframes apparitionBas {
+    from {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sommaire {
+    width: 35%;
+    @include box;
+    opacity: 0;
+    animation: 1s apparitionDroite 2s cubic-bezier(.68, -0.55, 0, 2.43) forwards;
+}
+
+@keyframes apparitionDroite {
+    from {
+        transform: translateX(60px);
+
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
