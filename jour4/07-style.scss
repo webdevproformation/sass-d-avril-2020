@@ -12,8 +12,11 @@ des balises qui sont mis par défaut par le navigateur
         margin: 0;
     }
 }
-
-body, p{
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+ p{
     margin: 0;
 }
 
@@ -141,10 +144,17 @@ la zone de menu
     padding: 10px;
     border-radius: 5px;
     color:white;
+    transform: translateX(-2000px) scale(0.2);
+    animation : 2s apparition forwards;
 
     img{
         border-radius: 5px;
         margin-right: 10px;
+        transition: 1s transform;
+
+        &:hover{
+            transform: scale(1.2) ;
+        }
     }
 
     h2{
@@ -161,6 +171,9 @@ la zone de menu
     background: white;
     border-radius: 5px;
     padding: 10px;
+
+    transform: translateX(2000px) scale(0.2);
+    animation : 2s apparition 1s forwards;
 
     h3{
         padding: 20px 0 10px 0;
@@ -189,9 +202,19 @@ la zone de menu
 
 .contenu-bottom{
     @extend .contenu-middle; // héritage 
+    transform: translateX(-2000px) scale(0.2);
+    animation : 2s apparition 2s forwards  ;
 
     li a{
         font-size: 14px;
         margin-left: 10px;
+    }
+}
+
+
+@keyframes apparition{
+    
+    to{
+        transform: translateX(0);
     }
 }

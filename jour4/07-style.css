@@ -30,7 +30,12 @@ h6 {
   margin: 0;
 }
 
-body, p {
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+p {
   margin: 0;
 }
 
@@ -182,11 +187,24 @@ la zone de menu
   padding: 10px;
   border-radius: 5px;
   color: white;
+  -webkit-transform: translateX(-2000px) scale(0.2);
+          transform: translateX(-2000px) scale(0.2);
+  -webkit-animation: 2s apparition forwards;
+          animation: 2s apparition forwards;
 }
 
 .contenu-top img {
   border-radius: 5px;
   margin-right: 10px;
+  -webkit-transition: 1s -webkit-transform;
+  transition: 1s -webkit-transform;
+  transition: 1s transform;
+  transition: 1s transform, 1s -webkit-transform;
+}
+
+.contenu-top img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contenu-top h2 {
@@ -203,6 +221,10 @@ la zone de menu
   background: white;
   border-radius: 5px;
   padding: 10px;
+  -webkit-transform: translateX(2000px) scale(0.2);
+          transform: translateX(2000px) scale(0.2);
+  -webkit-animation: 2s apparition 1s forwards;
+          animation: 2s apparition 1s forwards;
 }
 
 .contenu-middle h3, .contenu-bottom h3 {
@@ -234,8 +256,29 @@ la zone de menu
   padding: 15px 0;
 }
 
+.contenu-bottom {
+  -webkit-transform: translateX(-2000px) scale(0.2);
+          transform: translateX(-2000px) scale(0.2);
+  -webkit-animation: 2s apparition 2s forwards;
+          animation: 2s apparition 2s forwards;
+}
+
 .contenu-bottom li a {
   font-size: 14px;
   margin-left: 10px;
+}
+
+@-webkit-keyframes apparition {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes apparition {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=07-style.css.map */
