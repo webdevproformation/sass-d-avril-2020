@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        dans cette page insérer une image de 400x200 px
+        lorsque vous passez la souris sur cette image alors l'image va se décaller vers la droite de 50px
+        lorsque vous enelver la souris sur cette image l'image se remet à sa position initiale
+    -->
+
+    <img src="https://via.placeholder.com/400x200" alt="" class="img">
+
+    <style>
+        .img {
+            /*  transition: 1s margin-left; */
+            transition: 1s transform;
+        }
+
+        .img:hover {
+            /*margin-left: 50px;*/
+            transform: translateX(50px);
+        }
+    </style>
+
+    <!-- jour3 > cas pratique animation -->
+
+    <!-- 
+        1 le html
+            .card
+                .card-entete
+                    h2
+                    img
+                .card-body
+                    p > lorem30                   
+        2 le css
+
+    -->
+    <section class="card">
+        <div class="card-entete">
+            <h2>Lorem, ipsum.</h2>
+            <img src="https://via.placeholder.com/150x80" alt="">
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facere molestias delectus atque
+                officia commodi vero pariatur, nostrum tempore quidem quibusdam, eius aliquam est. </p>
+        </div>
+    </section>
+    <style>
+        .card {
+            width: 200px;
+            position: relative;
+        }
+
+        .card-entete {
+            background: rgb(230, 28, 122);
+            text-align: center;
+            padding: 25px 0;
+            height: 150px;
+            transform: translateY(100px);
+            transition: 1s transform;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-entete h2 {
+            margin: 0 0 10px 0;
+        }
+
+        .card-body {
+            background: rgb(37, 21, 28);
+            color: white;
+            padding: 25px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            transform: translateY(-100px);
+            transition: 1s transform;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-body p {
+            width: 150px;
+        }
+
+        .card:hover .card-body {
+            transform: translateY(0);
+        }
+
+        .card:hover .card-entete {
+            transform: translateY(0);
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        faire de l'animation via css  
+        il existe deux techniques pour faire de l'animation via css
+        deux mots clés 
+        animation + @keyframes => animation qui sont déclenchées de manière automatique
+        vous ouvrez la page et automatiquement l'animation se déclenche 
+    -->
+
+    <div class="element1">
+        Element à animer
+    </div>
+
+    <style>
+        .element1 {
+            animation: 1s test 2s linear infinite forwards;
+        }
+
+        @keyframes test {
+            0% {}
+
+            10% {}
+
+            30% {}
+
+            100% {}
+        }
+    </style>
+
+    <!-- 
+        l'autre et dernière manière de faire de l'animation => via le mot clé
+        transition => animation ne sera déclenchée que suite à une action de la personne qui visite votre page web
+        en css via le passage de souris sur un élément :hover 
+        lorsque la personne passe la souris sur un élément alors on déclenche l'animation
+        et lorsque la personne sort la souris de l'élément alors on fait retour à la situation initiale
+    -->
+
+    <button>Valider</button>
+
+    <style>
+        button {
+            background: green;
+            transition: background 1s, color 0.5s, border 2000ms;
+        }
+
+        button:hover {
+            background: red;
+            color: honeydew;
+            border: 1px solid blue;
+
+        }
+    </style>
+
+
+</body>
+
+</html>
