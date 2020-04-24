@@ -8,90 +8,68 @@
 </head>
 
 <body>
+    <div class="container">
+        <!--  img[src="https://via.placeholder.com/400x200"]*25 -->
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+    </div>
 
     <!-- 
-        grille 5 colonnes 
-            40 images => chaque image aura pour dimensions 400x200
-
+        si l'écran est grand => grille de 4 colonnes  > 1000px
+        si l'ecran est moyen => grille de 3 colonnes 700px - 1000px
+        si l'ecran est petit => grille de 2 colonnes 500px - 700px
+        si l'ecran est très petit => grille de 1 colonnes 500
     -->
 
-    <div class="grille">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-        <img src="https://via.placeholder.com/400x200" alt="">
-
-    </div>
-    <!--  .grille>img[src="https://via.placeholder.com/400x200"]*40 -->
     <style>
-        .grille {
+        .container {
             display: flex;
             flex-wrap: wrap;
-            border: 1px solid red;
-
+            justify-content: space-between;
         }
 
-        .grille img {
-            width: calc(20% - 10px);
-            margin: 5px;
+        .container img {
+            width: calc(25% - 10px);
+            margin: 5px 0;
         }
 
-        @media (max-width:900px) {
-            .grille img {
-                width: calc(25% - 10px);
-            }
-        }
-
-        @media (max-width:700px) {
-            .grille img {
+        @media (max-width: 1000px) {
+            .container img {
                 width: calc(33.33% - 10px);
             }
         }
 
-        @media (max-width:500px) {
-            .grille img {
+        @media (max-width: 700px) {
+            .container img {
                 width: calc(50% - 10px);
             }
         }
 
-        @media (max-width:400px) {
-            .grille img {
+        @media (max-width: 500px) {
+            .container img {
                 width: calc(100% - 10px);
             }
         }
