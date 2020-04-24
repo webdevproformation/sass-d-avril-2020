@@ -44,11 +44,20 @@
 
     <script>
         document.querySelector(".action").addEventListener("click", function () {
-            document.querySelector(".zone").style["transform"] = "translateX(200px)";
-        })
+            /* document.querySelector(".zone").style["transform"] = "translateX(200px)"; */
+            document.querySelector(".zone").classList.toggle("move");
+        });
     </script>
 
     <style>
+        .zone {
+            transition: 1s transform;
+        }
+
+        .zone.move {
+            transform: translateX(200px);
+        }
+
         img {
             max-width: 100%;
         }
