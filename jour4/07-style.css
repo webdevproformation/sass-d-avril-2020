@@ -30,7 +30,7 @@ h6 {
   margin: 0;
 }
 
-p {
+body, p {
   margin: 0;
 }
 
@@ -164,5 +164,78 @@ la zone de menu
   margin-right: 10px;
   font-size: 12px;
   color: #ccc;
+}
+
+.container {
+  width: 900px;
+  margin: 10px auto;
+}
+
+.contenu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: purple;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.contenu-top img {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.contenu-top h2 {
+  font-size: 16px;
+}
+
+.contenu-top p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.contenu-middle, .contenu-bottom {
+  margin-top: 10px;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contenu-middle h3, .contenu-bottom h3 {
+  padding: 20px 0 10px 0;
+}
+
+.contenu-middle li, .contenu-bottom li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.contenu-middle img, .contenu-bottom img {
+  margin-right: 10px;
+}
+
+.contenu-middle p, .contenu-bottom p {
+  font-size: 14px;
+}
+
+.contenu-middle footer, .contenu-bottom footer {
+  text-align: right;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.contenu-bottom li a {
+  font-size: 14px;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=07-style.css.map */
