@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        html 
+
+        .container
+            article *3
+                h2 > Méthode $
+                img
+                p > lorem10
+
+    -->
+    <!-- .container>article*3>(h2>{méthode $})+(img)+p>lorem10 -->
+    <div class="container">
+        <article>
+            <h2>méthode 1</h2>
+            <img src="https://via.placeholder.com/400x200" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, deleniti.</p>
+        </article>
+        <article>
+            <h2>méthode 2</h2>
+            <img src="https://via.placeholder.com/400x200" alt="">
+            <p>Rerum alias ullam vel, tenetur hic fuga a quo ratione!</p>
+        </article>
+        <article>
+            <div class="zone">
+                <h2>méthode 3</h2>
+                <img src="https://via.placeholder.com/400x200" alt="">
+                <p>Modi veritatis facere aut beatae aspernatur. Id aspernatur debitis iure?</p>
+            </div>
+            <div>
+                <button>modifier</button>
+            </div>
+        </article>
+    </div>
+
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 700px;
+            justify-content: space-between;
+        }
+
+        .container article {
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .container article:nth-child(2) {
+            background: rgb(26, 9, 65);
+            color: white;
+        }
+
+        .container article:nth-child(1),
+        .container article:nth-child(2) {
+            transition: 1s transform;
+        }
+
+        .container article:nth-child(1):hover,
+        .container article:nth-child(2):hover {
+            transform: rotate(360deg) translateY(150px);
+        }
+
+        .container article:nth-child(3) {
+            transition: 1s transform;
+        }
+
+        .container article:nth-child(3):hover {
+            transform: translateX(200px);
+        }
+    </style>
+</body>
+
+</html>
