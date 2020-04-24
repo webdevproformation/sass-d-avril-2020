@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        comment j'ai fait un triangle en css ???
+        1 faire image sur photoshop => appeler via une balise img
+        2 librairie => fontawesome => https://fontawesome.com/
+        => https://fontawesome.com/icons?d=gallery&q=caret 
+        <i class="fas fa-caret-down"></i>
+
+        3 dessiner le triangle via du css
+    -->
+    bonjour <div class="triangle"></div>
+    bonjour <span class="triangle2"></span>
+    <style>
+        .triangle {
+            width: 20px;
+            height: 20px;
+            border: 20px solid transparent;
+            border-top-color: black;
+        }
+
+        .triangle2 {
+            /*visuellement j'ai un triangle => carré que l'on fait via span avec des bordures épaisses*/
+            border: 20px solid transparent;
+            border-top-color: green;
+        }
+    </style>
+
+    <!-- commentaire faire pour que j'aligner en hauteur et largeur les éléments
+         dont je ne connais pas les dimensions
+        
+    -->
+
+    <div class="infos">
+        <div>
+            <img src="https://via.placeholder.com/400x200" alt="">
+            <h1>titre</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti quam magnam neque molestias
+                natus debitis tempora mollitia! Vero labore rerum atque tempore, earum totam quos deleniti dicta quaerat
+                iure?</p>
+        </div>
+    </div>
+    <style>
+        .infos {
+            width: 500px;
+            height: 500px;
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .infos div {
+            width: 400px;
+        }
+    </style>
+
+
+</body>
+
+</html>
