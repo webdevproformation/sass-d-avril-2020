@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        responsive :
+        avec l'arrivée de 3g puis la 4g, internet est de plus en plus lu dans des smartphones / tablettes
+        vote html va être lu dans écran qui sont tout petit largeur et de hauteur 
+
+        en tant que développeur vous allez pas coder un autre site internet spécialement 
+        => ordinateur
+        => pour les smartphones 
+
+        prendre le site pour ordinateur et l'adapter pour qu'il soit adapté pour les smartphones => 
+        design desktop first
+
+        prendre le design pour les smartphones et l'adapter pour qu'il soit compatible pour les ordinateurs
+        design mobile first
+    -->
+
+    <!-- 
+        pour pouvoir adapter votre design en fonction de l'écran qui va le lire 3 techniques de base 
+
+        1 ajouter la ligne meta viewport => OBLIGATOIREMENT mise dans la balise head de votre page html
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        2 utilisation d'un sélecteur en css 
+        @media { }
+        si l'écran (smartphone / ordinateur / tablette) a une largeur de 700px alors les tailles de polices va être de 15px
+        @media (max-width:700px){
+            p{
+                font-size:15px;
+            }
+        }
+
+        @media query  = requête en fonction des hardware qui va lire votre page html
+
+        3 img / video / iframe (google map)
+        max-width:100% ;
+        height:auto;
+
+        => balise img src="" srcset="" // améliorer la vitesse de chargement de vos pages si vous avez un smartphone qui le lit => qualité du réseau est moins bonne que pour un ordinateur 
+        https://www.grafikart.fr/tutoriels/images-responsive-1152
+
+
+        google => https://mediaqueri.es/
+
+        https://www.mydevice.io/ => connaitre la largeur de votre écran de smartphone 
+    -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        grille 5 colonnes 
+            40 images => chaque image aura pour dimensions 400x200
+
+    -->
+
+    <div class="grille">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <img src="https://via.placeholder.com/400x200" alt="">
+    </div>
+    <!--  .grille>img[src="https://via.placeholder.com/400x200"]*40 -->
+    <style>
+        .grille {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .grille img {
+            width: calc(20% - 10px);
+            margin: 5px 0;
+        }
+
+        @media (max-width:900px) {
+            .grille img {
+                width: calc(25% - 10px);
+            }
+        }
+
+        @media (max-width:700px) {
+            .grille img {
+                width: calc(33.33% - 10px);
+            }
+        }
+
+        @media (max-width:500px) {
+            .grille img {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width:400px) {
+            .grille img {
+                width: calc(100% - 10px);
+            }
+        }
+    </style>
+</body>
+
+</html>
