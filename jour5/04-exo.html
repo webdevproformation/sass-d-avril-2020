@@ -37,11 +37,16 @@
                 <p>Modi veritatis facere aut beatae aspernatur. Id aspernatur debitis iure?</p>
             </div>
             <div>
-                <button>modifier</button>
+                <button class="action">modifier</button>
             </div>
         </article>
     </div>
 
+    <script>
+        document.querySelector(".action").addEventListener("click", function () {
+            document.querySelector(".zone").style["transform"] = "translateX(200px)";
+        })
+    </script>
 
     <style>
         img {
@@ -83,13 +88,13 @@
             transform: rotate(360deg) translateY(150px);
         }
 
-        .container article:nth-child(3) {
+        /*   .container article:nth-child(3) {
             transition: 1s transform;
         }
 
         .container article:nth-child(3):hover {
             transform: translateX(200px);
-        }
+        } */
     </style>
 </body>
 
