@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        le menu d'un site internet est souvent la partie la plus compliqué en terme css et notamment pour la partie responsive design
+
+
+        zone de menu
+            logo
+            menu > liste qui contient 5 items qui contient lien > 1 mot fictif
+    -->
+    <div class="menu">
+        <img src="https://via.placeholder.com/120x60" alt="">
+        <ul>
+            <!--  li*5>a[href="#"]>lorem1 -->
+            <li><a href="#">Lorem.</a></li>
+            <li><a href="#">Necessitatibus.</a></li>
+            <li><a href="#">Voluptatem.</a></li>
+            <li><a href="#">Eius.</a></li>
+            <li><a href="#">Voluptas.</a></li>
+        </ul>
+    </div>
+    <style>
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li {
+            margin-right: 10px;
+        }
+
+        @media (max-width:600px) {
+            .menu {
+                display: block;
+                text-align: center;
+            }
+
+            .menu ul {
+                padding: 0;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width:450px) {
+            .menu ul {
+                display: block;
+                text-align: center;
+            }
+
+            .menu li {
+                margin: 0;
+            }
+        }
+    </style>
+
+
+    <div class="menu2">
+        <img src="https://via.placeholder.com/120x60" alt="">
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <!--  li*5>a[href="#"]>lorem1 -->
+            <li><a href="#">Lorem.</a></li>
+            <li><a href="#">Necessitatibus.</a></li>
+            <li><a href="#">Voluptatem.</a></li>
+            <li><a href="#">Eius.</a></li>
+            <li><a href="#">Voluptas.</a></li>
+        </ul>
+    </div>
+    <script>
+        document.querySelector(".burger").addEventListener("click", function () {
+            document.querySelector(".menu2 ul").classList.toggle("show");
+        })
+    </script>
+
+    <style>
+        .menu2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu2 ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu2 li {
+            margin-right: 10px;
+        }
+
+        .burger {
+            width: 50px;
+            display: none;
+        }
+
+        .burger span {
+            display: block;
+            width: 100%;
+            height: 8px;
+            background: #000;
+            margin: 8px 0;
+        }
+
+        @media (max-width:600px) {
+            .menu2 {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .menu2 ul {
+                display: none;
+            }
+
+            .menu2 ul.show {
+                display: block;
+            }
+
+            .burger {
+
+                display: block;
+            }
+        }
+    </style>
+</body>
+
+</html>
